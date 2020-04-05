@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.preference.PreferenceManager;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.CardView;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -99,10 +100,17 @@ public class ShareListsItemViewHolder extends AbstractViewHolder<ListItem, Share
             Context context = shareListsCache.getActivity();
             productService.getAllProducts(item.getId())
                     .doOnNext(productItem -> productItems.add(productItem))
-                    .doOnCompleted(() ->
-                    {
-                        String shareableText = shoppingListService.getShareableText(item, productItems);
-                        MessageUtils.shareText(context, shareableText, item.getListName());
+                    .doOnCompleted(() -> {
+                        String item_detail = item.getDetailInfo(context);
+                        String each_detail = "";
+                        for(int i=0; i<productItems.size(); i++) {
+                            String product_name = productItems.get(i).getProductName();
+                            each_detail = each_detail + "\n\nProduct: " + product_name+"\n"+ productItems.get(0).getDetailInfo(context);
+                        }
+                        String item_name = item.getListName();
+                        String share_str = "Shopping: " + item_name + "\n" + item_detail + "\n" + each_detail;
+//                        String shareableText = shoppingListService.getShareableText(item, productItems);
+                        MessageUtils.shareText(context, share_str, item.getListName());
                     })
                     .doOnError(Throwable::printStackTrace)
                     .subscribe();

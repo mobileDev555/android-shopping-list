@@ -67,8 +67,11 @@ public class ShareProductsItemViewHolder extends AbstractViewHolder<ProductItem,
             productQuantityTextView.setTextColor(grey);
             checkBox.setSupportButtonTintList(ColorStateList.valueOf(grey));
 
-            String shareableText = productService.getSharableText(item);
-            MessageUtils.shareText(cache.getActivity(), shareableText, item.getProductName());
+            String product_name = item.getProductName();
+            String product_detail = item.getDetailInfo(cache.getActivity());
+            String share_str = "Product: " + product_name+"\n"+ product_detail;
+//            String shareableText = productService.getSharableText(item);
+            MessageUtils.shareText(cache.getActivity(), share_str, item.getProductName());
         } else {
             int white = resources.getColor(R.color.white);
             int black = resources.getColor(R.color.black);

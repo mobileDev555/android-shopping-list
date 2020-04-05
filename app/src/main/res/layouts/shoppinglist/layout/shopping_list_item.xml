@@ -90,7 +90,7 @@
                     android:src="@drawable/ic_keyboard_arrow_down_white_48sp"/>
             <ImageButton
                 android:id="@+id/share_button_list"
-                android:layout_width="50sp"
+                android:layout_width="60sp"
                 android:layout_height="@dimen/listPreferredItemHeight"
                 android:tint="?attr/colorAccent"
                 android:layout_centerVertical="true"
