@@ -37,7 +37,8 @@
                     app:counterMaxLength="40"
                     android:id="@+id/product_name_input_layout"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:layout_toStartOf="@+id/product_checkbox">
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/product_checkbox">
                     <AutoCompleteTextView
                         android:id="@+id/product_name"
                         android:inputType="text|textCapSentences"

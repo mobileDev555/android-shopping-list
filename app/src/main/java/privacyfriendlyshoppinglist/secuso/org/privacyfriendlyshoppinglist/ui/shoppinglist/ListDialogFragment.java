@@ -144,7 +144,7 @@ public class ListDialogFragment extends DialogFragment
         if ( !StringUtils.isEmpty(item.getDeadlineDate()) )
         {
             dialogCache.getDeadlineExpansionButton().setVisibility(View.VISIBLE);
-            dialogCache.getDeadlineExpansionButton().setImageResource(R.drawable.ic_keyboard_arrow_down_white_48sp);
+            dialogCache.getDeadlineExpansionButton().setImageResource(R.drawable.ic_arrow_down_white_24dp);
 
             dialogCache.getCheckBox().setChecked(true);
             String language;
@@ -171,12 +171,12 @@ public class ListDialogFragment extends DialogFragment
                 if ( dialogCache.getDeadlineLayout().getVisibility() == View.VISIBLE )
                 {
                     dialogCache.getDeadlineLayout().setVisibility(View.GONE);
-                    dialogCache.getDeadlineExpansionButton().setImageResource(R.drawable.ic_keyboard_arrow_down_white_48sp);
+                    dialogCache.getDeadlineExpansionButton().setImageResource(R.drawable.ic_arrow_down_white_24dp);
                 }
                 else
                 {
                     dialogCache.getDeadlineLayout().setVisibility(View.VISIBLE);
-                    dialogCache.getDeadlineExpansionButton().setImageResource(R.drawable.ic_keyboard_arrow_up_white_48sp);
+                    dialogCache.getDeadlineExpansionButton().setImageResource(R.drawable.ic_arrow_up_white_24dp);
                 }
             }
         });
@@ -197,7 +197,7 @@ public class ListDialogFragment extends DialogFragment
                 if ( dialogCache.getCheckBox().isChecked() )
                 {
                     dialogCache.getDeadlineExpansionButton().setVisibility(View.VISIBLE);
-                    dialogCache.getDeadlineExpansionButton().setImageResource(R.drawable.ic_keyboard_arrow_up_white_48sp);
+                    dialogCache.getDeadlineExpansionButton().setImageResource(R.drawable.ic_arrow_up_white_24dp);
                     dialogCache.getDeadlineLayout().setVisibility(View.VISIBLE);
                     dialogCache.getDateTextView().setText(DateUtils.getDateAsString(currentDate.getTimeInMillis(), datePattern, language));
                     dialogCache.getTimeTextView().setText(DateUtils.getDateAsString(currentDate.getTimeInMillis(), timePattern, language));

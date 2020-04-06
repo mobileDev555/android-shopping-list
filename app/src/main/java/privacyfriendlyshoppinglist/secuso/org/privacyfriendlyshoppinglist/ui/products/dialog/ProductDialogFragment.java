@@ -262,7 +262,7 @@ public class ProductDialogFragment extends DialogFragment
         dialogCache.getPrice().setFilters(new InputFilter[]{new PriceInputFilter(dialogCache)});
 
 
-        dialogCache.getProductNotes().setOnFocusChangeListener(new ProductDialogFocusListener(dialogCache));
+//        dialogCache.getProductNotes().setOnFocusChangeListener(new ProductDialogFocusListener(dialogCache));
         dialogCache.getProductName().setOnFocusChangeListener(new ProductDialogFocusListener(dialogCache));
 
         Observable<AutoCompleteLists> rxAutoCompleteLists = productService.getAutoCompleteListsObservable();

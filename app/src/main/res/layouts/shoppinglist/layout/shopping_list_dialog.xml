@@ -111,7 +111,7 @@
                         android:scaleType="fitCenter"
                         android:tint="@color/colorAccent"
                         android:background="?android:selectableItemBackground"
-                        android:src="@drawable/ic_keyboard_arrow_down_white_48sp"
+                        android:src="@drawable/ic_arrow_down_white_24dp"
                         android:visibility="invisible"/>
             </LinearLayout>
 

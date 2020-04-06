@@ -2,6 +2,7 @@ package privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.ma
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
@@ -15,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.R;
@@ -153,6 +155,10 @@ public class MainActivity extends BaseActivity implements BottomNavigationView.O
                 drawerLayout.openDrawer(Gravity.START);
             }
         });
+
+//        TextView title_txt = findViewById(R.id.title_txt);
+//        Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Choplin-ExtraLight-DEMO.otf");
+//        title_txt.setTypeface(tf,Typeface.BOLD);
     }
 
     @Override

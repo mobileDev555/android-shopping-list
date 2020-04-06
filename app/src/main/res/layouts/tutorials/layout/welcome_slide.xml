@@ -22,9 +22,9 @@
                 android:textStyle="bold" />
 
         <ImageView
-                android:layout_width="@dimen/img_width_height"
-                android:layout_height="@dimen/img_width_height"
-                android:background="@drawable/logo25"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/ic_logo"
         />
 
         <TextView
