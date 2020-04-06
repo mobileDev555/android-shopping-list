@@ -21,26 +21,26 @@
         android:paddingTop="15dp"
         android:orientation="horizontal">
         <ImageView
-            android:id="@+id/back_img"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/ic_arrow_back_black_24dp"/>
+        android:id="@+id/back_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="55dp"
             android:gravity="center"
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"
-            android:background="@drawable/logo_font_shop"
+            android:background="@drawable/logo_font_shop1"
             android:layout_weight="0.2"/>
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:visibility="invisible"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="15dp"
             android:background="@drawable/ic_more_horiz_black_24dp"/>
     </LinearLayout>
     <LinearLayout

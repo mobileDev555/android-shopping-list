@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Shopping List</string>
+    <string name="app_name" translatable="false">My Shopping List</string>
     <string name="app_name_long" translatable="false">Privacy Friendly Shopping List</string>
     <!--### GENERAL ### -->
     <string name="cancel">Cancel</string>

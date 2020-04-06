@@ -26,7 +26,7 @@
             android:gravity="center"
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"
-            android:background="@drawable/logo_font_shop"
+            android:background="@drawable/logo_font_shop1"
             android:layout_weight="0.2"/>
         <ImageView
             android:layout_width="30dp"
