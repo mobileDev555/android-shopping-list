@@ -3,8 +3,8 @@ package privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.de
 import android.annotation.SuppressLint;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
-import android.graphics.Paint;
-import android.support.v7.widget.AppCompatCheckBox;
+
+import androidx.appcompat.widget.AppCompatCheckBox;
 import android.view.View;
 import android.widget.TextView;
 import privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.R;

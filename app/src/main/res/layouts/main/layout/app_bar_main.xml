@@ -32,12 +32,11 @@
             android:background="@drawable/logo_font_shop1"
             android:layout_weight="0.2"/>
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
-            android:visibility="invisible"
             android:layout_marginRight="15dp"
-            android:background="@drawable/ic_more_horiz_black_24dp"/>
+            android:background="@drawable/ic_logo"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -94,17 +93,17 @@
         android:layout_marginTop="-30dp"
         android:layout_marginLeft="20dp"
         android:background="@drawable/ic_arrow_drop_down_black_24dp"/>
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="-25dp">
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_new_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -169,7 +168,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:orientation="vertical">
-        <android.support.design.widget.BottomNavigationView
+        <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -181,5 +180,5 @@
             app:itemTextColor="@android:color/white"
             app:menu="@menu/bottom_nav_menu" />
     </LinearLayout>
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </LinearLayout>
